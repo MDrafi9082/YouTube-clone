@@ -1,0 +1,79 @@
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.top{
+    position:relative;
+}
+.video-time{
+    position:absolute;
+    background-color:black;
+    color:white;
+    bottom:9px;
+    right:6px;
+    padding:3px 6px;
+    border-radius:3px;
+}
+.thumbnail-image{
+    width:100%;
+}
+.artist-profile{
+    height:50px;
+    width:50px;
+    object-fit:cover;
+    border-radius:25px;
+}
+.bottom{
+    margin-top:6px;
+    display:grid;
+    grid-template-columns:60px 1fr ;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap:20px;
+    row-gap:36px;
+}
+
+@media (max-width:600px){
+    .video-grid{
+        grid-template-columns:1fr ;
+    }
+}
+
+@media (min-width:601px)and (max-width:850px){
+    .video-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media (min-width:851px)and (max-width:1250px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media (min-width:1251px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-link{
+    text-decoration:none;
+}
+::-webkit-scrollbar{
+    width:18px;
+    background-color:rgb(50, 37, 37);
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgb(87, 87, 87);
+    border-radius:9px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(127, 126, 126);
+}

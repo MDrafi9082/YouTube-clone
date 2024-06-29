@@ -1,0 +1,149 @@
+
+.header{
+    z-index:100;
+    background-color:rgb(60, 46, 46);
+    display:flex;
+    column-gap:36px;
+    justify-content:space-between;
+    height:70px;
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    border-bottom-width:6px;
+}
+.left-section{
+    display:flex;
+    align-items:center;
+}
+
+.menu{
+    height:27px;
+    margin-left: 36px;
+}
+.youtube-logo{
+    height:27px;
+    margin-left:37px;
+}
+
+.middle-section{
+    margin-right:36px;
+    margin-left:36px;
+    width:500px;
+    display:flex;
+    align-items:center;
+}
+.search{
+    flex:1;
+    border-style:solid;
+    padding-left:9px;           
+    height:38px;
+    border-radius:3px;  
+    font-size:18px;
+    border-width:1px;
+    border-color:gray;
+    width:0px;
+    box-shadow:inset 1px 2px 3px(0,0,0,0.5);
+}
+.search:placeholder{
+    font-size:18px;
+}
+.search-icon{
+    height:30px;
+    margin-top:2px;
+}
+.voice-search{
+    height:27px;
+    margin-top:6px;
+}
+
+.search-icon-button{
+    height:40px;
+    margin-right:0px;
+    width:60px;
+    border-radius:2px;
+    border-width:1px;
+    border-color:gray;
+    border-style:solid;
+    background-color:rgb(223, 223, 223);
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+
+.search-icon-button .display-while-point,
+.voice-search-button .display-while-point,
+.right-icon .display-while-point{
+    position:absolute;
+    background-color:gray;
+    color:white;
+    bottom:-39px;
+    opacity:0;
+    padding:3px 6px;
+    border-radius:4px;
+    font-size:12px;
+    pointer-events:none;
+    white-space: nowrap;
+    transition: .5s;
+}
+.search-icon-button:hover .display-while-point,
+.voice-search-button:hover .display-while-point,
+.right-icon:hover .display-while-point{
+    opacity:0.69;
+}
+
+
+.voice-search-button{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border:none;
+    margin-left:10px;
+    background-color:rgb(223, 223, 223);
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+.right-section{
+    flex-shrink:0;
+    display:flex;
+    width:240px;
+    justify-content: space-between;
+    align-items:center;
+}
+.right-icon{
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+.upload{
+    height:27px;
+}
+.youtube-apps{
+    height:27px;
+
+}
+.notification-div{
+    position:relative;
+}
+.notify{
+    position:absolute;
+    background-color:red;
+    color:white;
+    font-size:12px;
+    top:-1px;
+    right:0px;
+    padding:1px 4px;
+    border-radius:9px;
+}
+.notification{
+    height:27px;
+}
+
+.youtube-acc{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    object-fit:cover;
+    margin-right:20px;
+}
